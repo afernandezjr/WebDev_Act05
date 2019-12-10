@@ -1,0 +1,90 @@
+body{
+  background-image: url(bgimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+img {
+  border-radius: 4px;
+  padding: 0px;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-left: 90px
+}
+.div1 {
+  width: 350px;
+  height: 655px;
+  background-color: #e8e8e8;
+  z-index: 0;
+  position: absolute;
+}
+
+hr{
+width: 80%;
+height: 1px;
+background-color:#ec008c;
+margin-right: auto;
+margin-left: auto;
+margin-top: 10px;
+font-family: 'Dosis', sans-serif;
+}
+
+p{
+  margin-top: 28pt;
+  margin-left: 190px;
+
+  line-height: 14pt;
+  font-family: 'Dosis', sans-serif;
+}
+p:hover{
+  text-decoration: underline;
+}
+
+h2 a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+
+  margin-left: 30px;
+  line-height: 14pt;
+}
+
+/*effect-underline*/
+a.effect-underline:after {
+content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+h3{
+	margin-left: 10px;
+}
+
+.main{
+	z-index: 1;
+	width: 900px;
+	height:300px;
+	position: absolute;
+	background-color: #e8e8e8;
+	margin-left: 400px;
+	top: 5%;
+}
