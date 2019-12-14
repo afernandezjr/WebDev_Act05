@@ -1,90 +1,366 @@
-body{
-  background-image: url(bgimage.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+/* body {
+     background-image: url(uic-logo3.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-left: 500x;
+ } */
+
+.Logo {
+    margin-top: 15px;
+    margin-left: 125px;
+    display: flex;
 }
-img {
-  border-radius: 4px;
-  padding: 0px;
-  width: 150px;
-  height: 150px;
-  margin-top: 10px;
-  margin-left: 90px
+
+h1 {
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
+
+hr {
+    width: 90%;
+    height: 1px;
+    background-color: #ec008c;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.imagename {
+    margin-top: 18px;
+    margin-left: 25px;
+    border-radius: 20px;
+}
+
+.image-round {
+    border-radius: 50%;
+}
+
 .div1 {
-  width: 350px;
-  height: 655px;
-  background-color: #e8e8e8;
-  z-index: 0;
-  position: absolute;
+    width: 350px;
+    height: 700px;
+    background-image: url(background.png);
+    background-color: #e8e8e8;
+    z-index: 0;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 7px 9px 60px -24px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 20px
 }
 
-hr{
-width: 80%;
-height: 1px;
-background-color:#ec008c;
-margin-right: auto;
-margin-left: auto;
-margin-top: 10px;
-font-family: 'Dosis', sans-serif;
+p {
+    margin-top: -100px;
+    margin-left: 140px;
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-  margin-top: 28pt;
-  margin-left: 190px;
-
-  line-height: 14pt;
-  font-family: 'Dosis', sans-serif;
-}
-p:hover{
-  text-decoration: underline;
+p.email-p {
+    margin-top: -20px;
+    margin-left: 140px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: lighter;
 }
 
-h2 a {
-  color: black;
-  font-size: 15px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  font-family: 'Dosis', sans-serif;
-
-  margin-left: 30px;
-  line-height: 14pt;
+p.Alert {
+    margin-top: 90px;
+    margin-left: 200px;
+    font-size: 13px;
+    font-weight: lighter;
 }
+
+.home {
+    height: 70px;
+    width: 10px;
+    border: 1 solid red;
+    margin-top: 50px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 20%;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    width: 328px;
+    border: 1px solid #e8e8e8;
+    border-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: -90px;
+    letter-spacing: 3px;
+}
+
+li a:hover {
+    background-color: #f19dd0;
+    transition: 1s;
+    color: white;
+    /* text-decoration: underline; */
+}
+
+
+/* h2 a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 30px;
+    line-height: 14pt;
+} */
+
 
 /*effect-underline*/
+
 a.effect-underline:after {
-content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 100%;
-  border-bottom: 1px solid;
-  margin-top: 10px;
-  opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
 }
 
 a.effect-underline:hover:after {
-  opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-h3{
-	margin-left: 10px;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
-.main{
-	z-index: 1;
-	width: 900px;
-	height:300px;
-	position: absolute;
-	background-color: #e8e8e8;
-	margin-left: 400px;
-	top: 5%;
+
+/* .main {
+    z-index: 2;
+    width: 815px;
+    height: 300px;
+    position: absolute;
+    background-color: #e8e8e8;
+    box-shadow: 7px 9px 60px -24px rgba(0, 0, 0, 0.75);
+    margin-left: 400px;
+    top: 5%;
+} */
+
+h2 {
+    margin-top: 100px;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.table1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-collapse: collapse;
+    position: absolute;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: -47%;
+}
+
+th {
+    position: absolute;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1.5px solid rgb(155, 153, 153);
+    position: relative;
+}
+
+td {
+    font-weight: normal;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 200px;
+    display: block;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.container1 {
+    width: 635px;
+    height: 200px;
+    background-image: url(containerbg.png);
+    background-color: #e8e8e8;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -200px;
+    border-radius: 10px;
+    box-shadow: 13px 14px 7px -8px rgba(204, 204, 204, 0.75);
+}
+
+.table2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-collapse: collapse;
+    position: absolute;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: -25%;
+}
+
+.imagechat:hover {
+    box-shadow: 4px 0 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.container2 {
+    width: 635px;
+    height: 200px;
+    background-color: #e8e8e8;
+    background-image: url(containerbg.png);
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -200px;
+    border-radius: 10px;
+    box-shadow: 13px 14px 7px -8px rgba(204, 204, 204, 0.75);
+}
+
+.image-chat {
+    border-radius: 50%;
+}
+
+.imagechat {
+    margin-top: 50px;
+    margin-left: 60px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.chrissa {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 10px;
+    margin-left: -9px;
+    margin-top: 10px;
+    width: 130px;
+}
+
+form.example input[type=text] {
+    position: absolute;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 200px;
+    background: #f1f1f1;
+    margin-left: 75.2%;
+}
+
+form.example button {
+    float: right;
+    width: 50px;
+    padding: 10px;
+    background: #f19dd0;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 93%;
+}
+
+form.example button:hover {
+    background: #f19dd0;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.searchbar {
+    position: relative;
+    margin-top: -55%;
+}
+
+.container3 {
+    margin-top: 20px;
+    margin-left: -15px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.alertnotif {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.newscontainer {
+    background-image: url(containerbg3.png);
+    z-index: 4;
+    width: 620px;
+    height: 300px;
+    position: relative;
+    margin-top: 55%;
+    margin-left: 37%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    box-shadow: 13px 14px 7px -8px rgba(204, 204, 204, 0.75);
+}
+
+p.online {
+    position: absolute;
+    font-weight: lighter;
+    margin-top: 23px;
+    font-size: 9px;
+    margin-left: 15px;
+}
+
+.container4 {
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.container5 {
+    margin-top: 20px;
+    margin-left: 215px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.newsupdate {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 10px;
+    margin-left: -9px;
+    margin-top: 10px;
+    width: 130px;
+}
+
+.news {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-left: 33%;
+    margin-top: 10px;
+    width: 300px;
+    text-decoration-line: underline;
 }
